@@ -7,7 +7,7 @@
     "twitter": "https://x.com/CelestiaOrg",
     "discord": "https://discord.com/invite/celestiacommunity",
     "icon": "https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg",
-    "stake": "https://www.mintscan.io/celestia",
+    "stake": "https://celestia-explorer.posthuman.digital/",
     "explorer": "https://www.mintscan.io/celestia",
     "chain_id": "celestia",
     "endpoints": {
