@@ -7,8 +7,8 @@
     "twitter": "https://x.com/CelestiaOrg",
     "discord": "https://discord.com/invite/celestiacommunity",
     "icon": "https://raw.githubusercontent.com/Validator-POSTHUMAN/celestia-source-data/refs/heads/main/celestia/celestia.svg",
-    "stake": "https://celestia-explorer.posthuman.digital/",
-    "explorer": "https://www.mintscan.io/celestia",
+    "stake": "https://www.mintscan.io/celestia",
+    "explorer": "https://celestia-explorer.posthuman.digital",
     "chain_id": "celestia",
     "endpoints": {
       "rpc": "https://rpc.celestia-mainnet.posthuman.digital",
