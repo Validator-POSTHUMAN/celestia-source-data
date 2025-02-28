@@ -32,13 +32,13 @@ rm -rf $HOME/.celestia-app/data
 ---
 
 ## **📥 Step 4: Download & Extract the Latest Posthuman Snapshot**
-Since Posthuman updates snapshots **every 24 hours**, use the latest one:
+> **Note:** Since Posthuman updates snapshots **every 24 hours**, use the latest one:
 
 ```bash
-curl -L https://snapshots.celestia.posthuman.digital/mainnet/celestia_latest.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.celestia-app
+curl -L https://snapshots.celestia.posthuman.digital/data_latest.lz4 | lz4 -dc - | tar -xf - -C $HOME/.celestia-app
 ```
 
-> **Note:** If Posthuman provides snapshot files with a timestamp, adjust the filename accordingly.
+
 
 ---
 
@@ -62,6 +62,5 @@ sudo journalctl -u celestia-appd -fo cat
 ---
 
 ## **✅ Done!**
-Your node should now sync from the restored **Posthuman snapshot**. 🚀  
-Let me know if you need further adjustments!
+Your node should now sync from the restored **Posthuman snapshot**. 🚀 
 
