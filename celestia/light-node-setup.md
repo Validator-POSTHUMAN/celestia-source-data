@@ -80,7 +80,7 @@ KEY_NAME="my_celes_key"
 ```bash
 sudo tee /etc/systemd/system/celestia-light.service > /dev/null <<EOF
 [Unit]
-Description=Celestia Light Node
+Description=celestia light
 After=network-online.target
 
 [Service]
