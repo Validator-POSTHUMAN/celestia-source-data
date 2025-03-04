@@ -72,12 +72,13 @@ cd $HOME/celestia-node
 ```sh
 sudo tee /etc/systemd/system/celestia-bridge.service > /dev/null <<EOF
 [Unit]
-Description=Celestia Bridge Node
+Description=celestia Bridge
 After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which celestia) bridge start --archival --metrics.tls=true --metrics --metrics.endpoint otel.celestia.observer
+ExecStart=$(which celestia) bridge start --archival \
+--metrics.tls=true --metrics --metrics.endpoint otel.celestia.observer
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
