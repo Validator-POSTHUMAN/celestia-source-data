@@ -88,18 +88,14 @@ KEY_NAME="my_celes_key"
 
 ## 🔄 7. Create a Service File for Celestia Full Storage Node
 ```bash
-sudo tee /etc/systemd/system/celestia-full.service > /dev/null <<EOF
+sudo tee /etc/systemd/system/celestia-bridge.service > /dev/null <<EOF
 [Unit]
-Description=Celestia Full Storage Node
+Description=celestia Bridge
 After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which celestia) full start \
---core.ip $CORE_IP \
---core.rpc.port $CORE_RPC_PORT \
---core.grpc.port $CORE_GRPC_PORT \
---keyring.accname $KEY_NAME \
+ExecStart=$(which celestia) bridge start --archival \
 --metrics.tls=true --metrics --metrics.endpoint otel.celestia.observer
 Restart=on-failure
 RestartSec=3
