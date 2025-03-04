@@ -5,7 +5,11 @@ This guide will help you set up a Celestia bridge node using PostHuman infrastru
 ---
 
 ## **Hardware Requirements**
-Ensure your server meets the minimum requirements for running a Celestia bridge node.
+| Node Type           | Memory       | Disk        |
+|---------------------|-------------|------------|
+| Light node        | 500 MB RAM   | 100 GB SSD  |
+| Bridge node       | 64 GB RAM    | 5 TiB NVME  |
+| Full storage node | 64 GB RAM    | 5 TiB NVME  |
 
 ---
 
